@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="overlay.css">
+  </head>
+  <body>
+
+    <div id="test-block">Click me</div>
+    <div id="main-title">Parent Window Mouse coordinates</div>
+    <div id="mainwindow-text"></div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./mainwindow.js"></script>
+  </body>
+</html>
